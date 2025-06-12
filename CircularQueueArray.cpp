@@ -39,5 +39,14 @@ class Queues{
                 REAR ++;
             }
             queue_array[REAR] = num; //3. Menambahkan elemen ke antrian
-    }
+        }
+
+        void remove(){
+            // Cek Apakah antiran kosong
+            if (FRONT == -1){
+                cout << "Queue Underflow\n";
+                return;
+            }
+            cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+        }
 };
